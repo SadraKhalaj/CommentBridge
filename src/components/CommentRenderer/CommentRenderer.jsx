@@ -1,14 +1,12 @@
-const CommentRenderer = ({ comments }) => {
+function CommentRenderer({ comment }) {
   return (
-    <>
-      {comments.map((comment) => (
-        <div className="commentContainer">
-          <p>{comment.name}</p>
-          <h1>{comment.body}</h1>
-        </div>
-      ))}
-    </>
+    <div className="commentContainer">
+      <h3>{comment.name}</h3>
+      <p>{comment.body}</p>
+    </div>
   );
-};
+}
 
 export default CommentRenderer;
+
+
